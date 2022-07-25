@@ -1,4 +1,4 @@
-import { ethers } from "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js";
+import { ethers } from "https://cdn-cors.ethers.io/lib/ethers-5.5.4.esm.min.js";
 import { abiContent } from "./abi.js";
 
 let tmp = "";
