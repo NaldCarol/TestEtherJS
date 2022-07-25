@@ -10,6 +10,9 @@ const contractAddress = "0x4B70d8eB6A009cE8715eFB48F601E52e943bc357";
 const contractAbi = abiContent;
 const contract = new ethers.Contract(contractAddress, contractAbi, signer);
 
+const testClick = document.getElementById("testClick");
+testClick.addEventListener("click", onTestClick, false);
+
 const clickConnect = document.getElementById("connect");
 clickConnect.addEventListener("click", connectWallet, false);
 
@@ -24,6 +27,11 @@ donateETH.addEventListener("click", donate, false);
 
 const withdrawETH = document.getElementById("withdrawETH");
 withdrawETH.addEventListener("click", withdraw, false);
+
+function onTestClick() {
+    document.getElementById("testContent").textContent = "讀取成功";
+}
+
 
 function connectWallet() {
     signer.getAddress().then(res=>tmp = res.toString())
