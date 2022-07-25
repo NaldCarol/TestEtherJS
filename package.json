@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "scripts": {
+    "prettier:solidity": "prettier --write contract/*.sol",
+    "solhint": "solhint -f table contract/*.sol"
+  },
+  "dependencies": {
+    "ethers": "^5.6.9"
+  },
+  "name": "testetherjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": ""
+}

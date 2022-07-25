@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <script type="module" src="/scripts/index.js"></script>
+</head>
+
+<body>
+    <h1 id="title">互動測試頁</h1>
+    <div id="msg-box">
+        <div class="msg">
+            <h3>連接地址：</h3>
+            <h3 id="address">0</h3>
+        </div>
+        <div class="msg">
+            <h3>餘額：</h3>
+            <h3 id="balance">0</h3>
+        </div>
+    </div>
+    <div class="btn-box" id="account-btn-group">
+        <button id="connect" class="btn">連接錢包</button>
+        <button id="query" class="btn">查詢餘額</button>
+    </div>
+    <div class="line"></div>
+    <div id="msg-box">
+        <div class="msg">
+            <h3>合約地址：</h3>
+            <h3 id="contract">0</h3>
+        </div>
+        <div class="msg">
+            <h3>餘額：</h3>
+            <h3 id="contractBalance">0</h3>
+        </div>
+    </div>
+    <div class="btn-box" id="contract-btn-group">
+        <button id="queryContract" class="btn">查詢合約餘額</button>
+        <button id="donateETH" class="btn">斗內</button>
+        <button id="withdrawETH" class="btn">拿錢</button>
+    </div>
+</body>
